@@ -36,6 +36,7 @@ export class DialogComponent {
   }
   onSubmit(){
 
+    console.log(this.taskForm.value);
    this.service.setId();
    const obj :Card = {
       id : this.service.getId(),

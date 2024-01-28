@@ -3,7 +3,7 @@ import { category } from "./category";
 export interface Card{
     id :number
     title:String;
-    category:category;
+    category:string;
     comments:String;
     assignedTo:String;
 

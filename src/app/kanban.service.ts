@@ -18,6 +18,10 @@ export class KanbanService {
 
   createTask(card :Card){
     this.tasks.push(card);
+    for(let c of this.tasks)
+    {
+      console.log(c.category);
+    }
     return "task created";
   }
   getId2(){

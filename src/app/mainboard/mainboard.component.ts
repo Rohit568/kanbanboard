@@ -12,23 +12,15 @@ export class MainboardComponent {
   tasks:Card[]=[];
   task2:Card[]=[]
   constructor(private service : KanbanService){
-     this.tasks = this.service.getTask();
+     
+ 
+  }
+
+  ngOnInit(){
+    this.tasks = this.service.getTask();
+    console.log(this.tasks);
   }
  
-
-  onDragStarted(event: any): void {
-    console.log('Drag started:', event);
-  }
-
-  onDragEnded(event: any): void {
-    console.log('Drag ended:', event);
-  }
-//rohit made this
-/*
-  onDrop(event: CdkDragDrop<t[]>): void {
-    moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
-  }
-  */
 }
 
   

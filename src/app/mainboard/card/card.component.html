@@ -1,17 +1,12 @@
 <div class = "container">
 <mat-card >
     <mat-card-content>
-    <div class = "feature" *ngIf="cards.category == 1; else elseBlock">
-    Feature
-    </div>
+    <div class = "feature" *ngIf= "isFeature; else elseBlock">Feature</div>
     <ng-template #elseBlock ><div class = "bug">Bug</div></ng-template>
-</mat-card-content>
+    </mat-card-content>
     <mat-card-content>
-
-        <div ><span class="title">Title:</span> {{ cards.title }}</div>
-      </mat-card-content>
-  
-    <mat-card-content>Comments:{{cards.comments}}</mat-card-content>
+   <div ><span class="title">Title:</span> {{ cards.title }}</div></mat-card-content>
+   <mat-card-content>Comments:{{cards.comments}}</mat-card-content>
     <mat-card-content>Assignedto:{{cards.assignedTo}}</mat-card-content>
   </mat-card>
 
