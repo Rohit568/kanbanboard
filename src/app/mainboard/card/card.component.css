@@ -12,3 +12,17 @@
 .bug{
     background-color: coral;
 }
+.icon-head{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.icon-child{
+    padding: auto;
+}
+mat-icon:hover {
+   color : green;
+}
+mat-card{
+border: 1px solid red;
+}

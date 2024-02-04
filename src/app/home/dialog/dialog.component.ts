@@ -43,7 +43,8 @@ export class DialogComponent {
       title : this.taskForm.value.title, 
       category: this.taskForm.value.category,
       comments: this.taskForm.value.comment,
-      assignedTo : this.taskForm.value.assignee
+      assignedTo : this.taskForm.value.assignee,
+      section : 1
    }
 
    this.service.createTask(obj);

@@ -1,0 +1,87 @@
+
+.conatiner-fluid{
+    background-image: url('src/assets/Images/jira image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 100% viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.login-container {
+    margin-left: 18px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+ 
+    text-align: left; /* Align content to the left */
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #888;
+}
+
+input {
+    width: calc(100% - 30px);
+    padding: 8px 30px 8px 10px; /* Adjust padding for icon */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Additional Styling for Visual Appeal */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.btn-css{
+    margin-left: 65px;
+
+}

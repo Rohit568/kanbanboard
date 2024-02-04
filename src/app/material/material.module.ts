@@ -9,7 +9,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatTreeModule} from '@angular/material/tree';
 
 
 
@@ -23,7 +23,8 @@ const materialComponent = [
   MatDialogModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatCardModule
+  MatCardModule,
+  MatTreeModule
 
   
 ]

@@ -6,6 +6,7 @@ export interface Card{
     category:string;
     comments:String;
     assignedTo:String;
+    section:number;
 
 }
 

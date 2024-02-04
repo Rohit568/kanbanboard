@@ -10,7 +10,10 @@ import { Card } from 'src/model/card';
 export class MainboardComponent {
 
   tasks:Card[]=[];
-  task2:Card[]=[]
+  task2:Card[]=[];
+  task3:Card[]=[];
+  task4:Card[]=[];
+  
   constructor(private service : KanbanService){
      
  
@@ -18,7 +21,19 @@ export class MainboardComponent {
 
   ngOnInit(){
     this.tasks = this.service.getTask();
+    this.task2 = this.service.getTask2();
+    this.task3 = this.service.getTask3();
+    this.task4 = this.service.getTask4();
+    console.log(this.task2);
     console.log(this.tasks);
+  }
+  ngOnChange()
+  {
+    console.log(this.task2.length + " " + this.tasks.length);
+    this.tasks = this.service.getTask();
+    this.task2 = this.service.getTask2();
+    this.task3 = this.service.getTask3();
+    this.task4 = this.service.getTask4();
   }
  
 }

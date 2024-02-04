@@ -23,7 +23,11 @@ export class HomeComponent {
 
   }
 
+ 
+
   createTask(){
+
+console.log(localStorage.getItem("user"));
       let dialogRef = this.dialog.open(DialogComponent, {
         height: '400px',
         width: '500px',

@@ -1,31 +1,44 @@
 /* styles.css or your preferred style file */
 
-.sidenav-container {
-    height: 100vh;
-  }
-  
-  .sidenav {
-    width: 200px;
-    margin-top:50px;
-  }
-  
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-    height : 100%;
-    
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 16px;
-  }
-  
-  .resizable-divider {
-    cursor: ew-resize;
-    background-color: #ddd;
-    width: 8px;
-    height: 100%;
-  }
-  
+mat-toolbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.head-first :hover{
+    color : red;
+}
+
+.head-second{
+   display : flex;
+   align-items: center;
+   justify-content: center;
+   width : 85%;
+}
+
+.example-container {
+  width: 100%;
+  margin: 2px;
+}
+mat-drawer {
+  width: 13rem;
+}
+
+mat-drawer-content {
+  width: auto;
+}
+
+.first-side{
+  margin:2px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: aliceblue;
+  border: 1px solid white;
+}
+.first-side :hover{
+  background-color : whitesmoke;
+}
+

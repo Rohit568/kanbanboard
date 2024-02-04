@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { DialogComponent } from './home/dialog/dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './mainboard/card/card.component';
+import { LoginComponent } from './login/login.component';
+import { DrawercontentComponent } from './drawercontent/drawercontent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CardComponent } from './mainboard/card/card.component';
     MainboardComponent,
     HomeComponent,
     DialogComponent,
-    CardComponent
+    CardComponent,
+    LoginComponent,
+    DrawercontentComponent
   ],
   imports: [
     BrowserModule,

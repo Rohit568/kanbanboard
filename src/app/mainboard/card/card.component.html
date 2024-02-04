@@ -1,13 +1,19 @@
 <div class = "container">
-<mat-card >
-    <mat-card-content>
-    <div class = "feature" *ngIf= "isFeature; else elseBlock">Feature</div>
-    <ng-template #elseBlock ><div class = "bug">Bug</div></ng-template>
+<mat-card [ngStyle]="{'border-color': getBorderColor()}" >
+
+    <div class = "row">
+    <mat-card-content class = "icon-head">
+    <div class = "feature icon-child col-sm-10" *ngIf= "isFeature; else elseBlock">Feature</div>
+    <ng-template #elseBlock ><div class = "bug icon-child col-sm-10">Bug</div></ng-template>
+    <div class = "icon-child col-sm-2"><mat-icon (click) = "onSectionChange(cards.id, cards.section)">menu</mat-icon></div>
     </mat-card-content>
-    <mat-card-content>
+  </div>
+<mat-card-content>
    <div ><span class="title">Title:</span> {{ cards.title }}</div></mat-card-content>
+   
    <mat-card-content>Comments:{{cards.comments}}</mat-card-content>
-    <mat-card-content>Assignedto:{{cards.assignedTo}}</mat-card-content>
+   <mat-card-content>Assignedto:{{cards.assignedTo}}</mat-card-content>
+   
   </mat-card>
 
 </div>

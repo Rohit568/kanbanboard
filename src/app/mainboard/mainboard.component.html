@@ -1,33 +1,43 @@
 <!-- app.component.html -->
 <div class="container">
-    <div class = "row">
-        <div class="col-sm heading">
-           Todo
-          </div>
-          <div class="col-sm heading">
-           In Progress
-          </div>
-          <div class="col-sm heading">
-            Completed
-          </div>
-          <div class="col-sm heading">
-            Review Pending
-          </div>
-    </div>
+   
     <div class="row">
       <div class="col-sm">
+        <div class="col-sm heading">
+          Todo ({{tasks.length}})
+         </div>
           <div class="row" *ngFor = "let card of tasks">
               <app-card [cards] ="card"></app-card>
           </div>
       </div>
       <div class="col-sm">
-        One of three columns
+        <div class="col-sm heading">
+          In Progress({{task2.length}})
+         </div>
+         <div class="row" *ngFor = "let card of task2">
+          <app-card [cards] ="card"></app-card>
+      </div>
+     
       </div>
       <div class="col-sm">
-        One of three columns
+        <div class="col-sm heading">
+          Review Pending({{task3.length}})
+        </div>
+
+        <div class="row" *ngFor = "let card of task3">
+          <app-card [cards] ="card"></app-card>
+      </div>
+    
       </div>
       <div class="col-sm">
-        One of three columns
+        <div class="col-sm heading">
+          Completed({{task4.length}})
+        </div>
+
+        <div class="row" *ngFor = "let card of task4">
+          <app-card [cards] ="card"></app-card>
+      </div>
+      
       </div>
     </div>
   </div>
